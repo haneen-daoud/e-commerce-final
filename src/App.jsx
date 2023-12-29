@@ -14,7 +14,7 @@ import CategoriesDetails from "./assets/components/web/categories/CategoriesDeta
 import Product from "./assets/components/web/products/Product.jsx";
 import { CartContextProvider } from "./assets/components/web/context/Cart.jsx";
 import Cart from "./assets/components/web/cart/Cart.jsx";
-import Profile from "./assets/components/web/profile/profile.jsx";
+import Profile from "./assets/components/web/profile/Profile.jsx";
 import { UserContext } from "./assets/components/web/context/User.jsx";
 import Forget from "./assets/components/web/forget/Forget.jsx"
 import Send from "./assets/components/web/sendCode/Send.jsx";
