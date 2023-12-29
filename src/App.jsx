@@ -79,7 +79,7 @@ export default function App() {
         },
         {
           path: 'profile',
-          element: <ProtectedRoutes><Profile /></ProtectedRoutes>,
+          element: <Profile />,
           children:[
               {
                 path:'usercontact',
