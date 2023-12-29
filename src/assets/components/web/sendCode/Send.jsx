@@ -4,6 +4,8 @@ import Input from '../../pages/Input'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { toast } from 'react-toastify'
+import { sendCode} from '../validation/validate.js';
+import '.././sharedCss/shared.css'
 
 export default function Send() {
   const initialValues = {
@@ -45,8 +47,11 @@ export default function Send() {
 
   return (
     <div className="container">
+   <div className="d-flex justify-content-center ">
+
+     
+      <form onSubmit={formik.handleSubmit} encType="multipart/form-data"  className="p-4  w-50 form-main ms-5 mt-5  pt-4  rounded-3 border-3">
       <h1>Enter email to sendCode</h1>
-      <form onSubmit={formik.handleSubmit} encType="multipart/form-data">
         <Input
           type="email"
           id="email"
@@ -58,12 +63,13 @@ export default function Send() {
           touched={formik.touched}
           errors={formik.errors}
         />
-        <button type="submit" disabled={!formik.isValid}>
-          Send Code
+        <button className ='button-48' type="submit" disabled={!formik.isValid}>
+         <span>Send Code</span> 
         </button>
-        <Link to="/login" className="text-decoration-none">
+        <Link to="/login" className='text-decoration-none text-black ms-5'>
           Back to Login
         </Link>
       </form>
+      </div>
     </div>)
 }

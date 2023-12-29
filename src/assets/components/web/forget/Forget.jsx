@@ -2,8 +2,10 @@ import React from 'react'
 import { useFormik } from 'formik';
 import Input from '../../pages/Input';
 import axios from "axios";
-import { ToastContainer, toast } from 'react-toastify';
+import {  toast } from 'react-toastify';
 import {  Link, useNavigate } from 'react-router-dom';
+import { forgetPassword} from '../validation/validate.js';
+import '.././sharedCss/shared.css'
 
 
 export default function Forget() {
@@ -85,13 +87,16 @@ const navigate = useNavigate()
   return (
     
     <div className=' container'>
-        <h1>Log in</h1>
-        <form onSubmit={formik.handleSubmit} encType='multipart/form-data'>
+        <div className="d-flex justify-content-center ">
+        <form onSubmit={formik.handleSubmit} encType='multipart/form-data' className="p-4  w-50 form-main ms-5 mt-5  pt-4  rounded-3 border-3">
+        <h1 className='text-black'>Log in</h1>
+
         {renderInputs}
-        <button type='submit' disabled={!formik.isValid}>Login</button>
-        <Link to="/send" className='text-decoration-none'>forget password?</Link>
+        <button type='submit' className ='button-48' disabled={!formik.isValid}><span>Login</span></button>
+        <Link to="/send" className='text-decoration-none text-black ms-5'>forget password?</Link>
       
         </form>
+    </div>
     </div>
 
   )
