@@ -1,16 +1,12 @@
 .cart {
     padding: 20px 0 60px 0;
 
-
 }
-
 .cart-items {
     display: flex;
     padding: 40px 0;
 
-
 }
-
 .cart-header {
     display: flex;
     justify-content: space-around;
@@ -20,7 +16,6 @@
     border-bottom: 1px solid #6C7275;
     overflow-x: auto;
 }
-
 
 .cart-header .first-row {
     flex-grow: 1;
@@ -56,9 +51,6 @@
     min-width: 240px;
 }
 
-
-
-
 .product-item {
     display: flex;
     gap: 50px;
@@ -69,13 +61,11 @@
     width: 15%;
 }
 
-
 .product-details {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
 .product-details h2 {
     font-size: 15px;
 }
@@ -123,8 +113,6 @@ h2{
     border: 0;
     width: 10%;
 }
-
-
 .cart-summary {
     padding: 24px;
     display: flex;
@@ -137,7 +125,6 @@ h2{
 
 
 }
-
 .summery-items {
     display: flex;
     flex-direction: column;
@@ -152,7 +139,6 @@ h2{
 
 
 }
-
 .summary-item {
     border: 1px solid #6C7275;
     padding: 13px;
@@ -173,7 +159,6 @@ h2{
 .summary-footer .total {
     font-weight: 700;
 }
-
 
 .checkout a {
     background-color: #141718;
@@ -203,17 +188,12 @@ h2{
     position: relative;
 }
 
-
 .coupon-form input {
     width: 100%;
     padding: 15px 170px 15px 60px;
     border: 1px solid var(--neutral-04100, #6C7275);
 
-
-
-
 }
-
 
 .coupon-form svg {
     position: absolute;

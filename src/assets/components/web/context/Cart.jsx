@@ -4,7 +4,6 @@ import { toast } from 'react-toastify';
 
 export const CartContext = createContext(null);
 export function CartContextProvider({ children }) {
-    let [userToken,setUserToken] =useState(null);
 
     const [count, setCount] = useState(null);
     const addToCartContext = async (productId) => {
@@ -68,7 +67,7 @@ export function CartContextProvider({ children }) {
 
     }
     
-    return <CartContext.Provider value={{ addToCartContext, getCartContext, removeItemContext, count,userToken ,setUserToken}}>
+    return <CartContext.Provider value={{ addToCartContext, getCartContext, removeItemContext, count}}>
         {children}
     </CartContext.Provider>
 

@@ -72,9 +72,6 @@ const {data,isLoading} =useQuery("getOrder",getOrder);
 
               <td className=' btn  text-decoration-none ' onClick={()=>{deleteorder(order._id)}}> delete</td>
   
-   
-  
-  
   
           </tr>
       </React.Fragment>

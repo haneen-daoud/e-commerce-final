@@ -7,7 +7,7 @@ import {  Link, useNavigate } from 'react-router-dom';
 
 
 export default function Forget() {
-const navigate=useNavigate()
+const navigate = useNavigate()
 
     const initialValues= {
         code:'',

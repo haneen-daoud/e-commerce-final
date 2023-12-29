@@ -27,21 +27,22 @@ const getStars=(rating)=>{
     return stars;
   }
 const{data,isLoading}=useQuery('product',getProduct)
-if(isLoading){
+if(isLoading)
   return <span class="loader"></span>
-}
   return (
     <>
    <div className="container">
     <div className="row">
    <div className="col-md-7 react-freg">
-          {data.subImages.map((image, index) => (
-            <React.Fragment key={index}>
-              <img
-                src={image.secure_url} 
-              />
-            </React.Fragment>
-          ))}
+   {data?.subImages?.map((image, index) => (
+     <React.Fragment key={index}>
+       <img
+         src={image.secure_url}
+         alt={`Image ${index}`}
+       />
+     </React.Fragment>
+   ))}
+
         </div>
         <div className="col-md-5" id="products">
    
@@ -72,7 +73,7 @@ if(isLoading){
           <h2 className='py-5 mt-5 rev text-center'>Reviews</h2>
 
           <div className=" row  mt-5 d-flex">
-            {data.reviews.map((review) => (
+            {data?.reviews.map((review) => (
               <div className="card col-md-3 mb-3 py-4">
                 <img src={review.createdBy.image.secure_url} className={` img-fluid rounded-3 `} width={'70px'} />
                 <div className="card-body text-center">

@@ -1,5 +1,4 @@
 import React from 'react'
-import Categories from '../categories/Categories'
 import './Home.css'
 import imgContent from "./images/HomeLogo.jpeg"
 export default function Home() {

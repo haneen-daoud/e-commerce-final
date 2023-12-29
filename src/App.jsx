@@ -14,7 +14,7 @@ import CategoriesDetails from "./assets/components/web/categories/CategoriesDeta
 import Product from "./assets/components/web/products/Product.jsx";
 import { CartContextProvider } from "./assets/components/web/context/Cart.jsx";
 import Cart from "./assets/components/web/cart/Cart.jsx";
-import Profile from "./assets/components/web/profile/Profile.jsx";
+import Profile from "./assets/components/web/profile/profile.jsx";
 import { UserContext } from "./assets/components/web/context/User.jsx";
 import Forget from "./assets/components/web/forget/Forget.jsx"
 import Send from "./assets/components/web/sendCode/Send.jsx";
@@ -25,6 +25,7 @@ import OrderDetails from "./assets/components/web/order/OrderDetails.jsx";
 import Review from "./assets/components/web/review/Review.jsx";
 import AllProduct from "./assets/components/web/products/AllProduct.jsx";
 import './index.css'
+import ProtectedRoutes from "./assets/components/web/protectedRoutes/ProtectedRoutes.jsx";
 export default function App() {
 
   let { setUserToken } = useContext(UserContext)
@@ -78,7 +79,7 @@ export default function App() {
         },
         {
           path: 'profile',
-          element: <Profile />,
+          element: <ProtectedRoutes><Profile /></ProtectedRoutes>,
           children:[
               {
                 path:'usercontact',

@@ -9,7 +9,7 @@ export default function Navbar({ user, setUser }) {
   const { count } = useContext(CartContext)
   const navigate = useNavigate()
  
-  const { userToken,userData ,setUserData} = useContext(UserContext)
+const { userData ,setUserData} = useContext(UserContext)
 console.log(userData)
 const logout = () => {
   localStorage.removeItem("UserToken")
@@ -63,12 +63,7 @@ const logout = () => {
           <li><hr className="dropdown-divider" /></li>
           <li><Link onClick={logout} className="dropdown-item" > Logout</Link></li>
           </>}
-          
-         
-          
-          
-          
-          
+     
         </ul>
       </li>
         </ul>

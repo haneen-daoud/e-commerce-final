@@ -3,7 +3,7 @@ import { useFormik } from 'formik';
 import Input from '../../pages/Input';
 import { LoginSchema, registerSchema } from '../validation/validate.js';
 import axios from "axios";
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import {  Link, useNavigate } from 'react-router-dom';
 import '.././sharedCss/shared.css'
 
@@ -40,19 +40,7 @@ const navigate=useNavigate()
         initialValues,
         onSubmit,
         validationSchema:LoginSchema
-        // validate:values=>{
-        //     let errors  = {};
-        //     if (!values.userName){
-        //         errors.userName = "username is required";
-        //     }
-        //     if(!values.email){
-        //         errors.email = "email is required";
-        //     }
-        //     if(!values.password){
-        //         errors.password = "password is required";
-        //     }
-        //     return errors;
-        // }
+        
     });
 
     const inputs = [
