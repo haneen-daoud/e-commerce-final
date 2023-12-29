@@ -4,7 +4,7 @@ import { useFormik } from 'formik'
 import { registerSchema } from '../validation/validate.js'
 import axios from 'axios'
 import { toast } from 'react-toastify';
-import '.././sharedCss/shared.css'
+import '.././sharedCss/sharedDesign.css'
 export default function Register() {
   const initialValues = {
     name: '',

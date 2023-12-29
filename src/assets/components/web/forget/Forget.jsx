@@ -5,7 +5,7 @@ import axios from "axios";
 import {  toast } from 'react-toastify';
 import {  Link, useNavigate } from 'react-router-dom';
 import { forgetPassword} from '../validation/validate.js';
-import '.././sharedCss/shared.css'
+import '.././sharedCss/sharedDesign.css'
 
 
 export default function Forget() {

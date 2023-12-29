@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { toast } from 'react-toastify'
 import { sendCode} from '../validation/validate.js';
-import '.././sharedCss/shared.css'
+import '.././sharedCss/sharedDesign.css'
 
 export default function Send() {
   const initialValues = {

@@ -4,7 +4,7 @@ import { useFormik } from "formik";
 import Input from "../../pages/Input";
 import axios from "axios";
 import { toast } from "react-toastify";
-import ".././sharedCss/shared.css"
+import ".././sharedCss/sharedDesign.css"
 export default function Review() {
   const { id } = useParams();
   let navigate = useNavigate();

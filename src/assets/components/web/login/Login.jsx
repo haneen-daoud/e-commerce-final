@@ -5,7 +5,7 @@ import { LoginSchema, registerSchema } from '../validation/validate.js';
 import axios from "axios";
 import { toast } from 'react-toastify';
 import {  Link, useNavigate } from 'react-router-dom';
-import '.././sharedCss/shared.css'
+import '.././sharedCss/sharedDesign.css'
 
 export default function Login({saveCurrentUser}) {
 const navigate=useNavigate()
